@@ -1,0 +1,22 @@
+Color Palette
+
+
+#8cc63f verde logo
+
+#ad699a violeta logo
+
+#6a492c marron logo
+
+
+
+#c53681 fucsia oscuro logo
+
+#98c035 verde mas oscuro fondo logo
+
+
+
+Extras
+
+#7d4e2f marron banners
+
+#e61a88 fucsia encendido

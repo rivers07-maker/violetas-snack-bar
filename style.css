@@ -1,0 +1,300 @@
+:root {
+  --color-white: #f2f2f2;
+  --color-plain-white: #fff;
+  --color-black: #2e2e2e;
+  --color-beige: #d3c1ae;
+  --color-purple: #ad699a;
+  --color-purple-low-opacity: #dfbbd3;
+  --color-green: #8cc63f;
+  --color-brown: #6a492c;
+  --color-fucsia: #c53681;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* -----CSS RESET----- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.3;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* -----CSS RESET----- */
+
+header {
+  background-color: var(--color-plain-white);
+  z-index: 999;
+  padding: 16px 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+  gap: 30px;
+}
+
+nav img {
+  width: 20%;
+}
+
+nav i {
+  font-size: 2rem;
+}
+
+.hero {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
+}
+
+.hero h1 {
+  color: var(--color-plain-white);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.hero img {
+  width: 55%;
+  max-width: 420px;
+}
+
+main {
+  color: var(--color-brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.primavera {
+  background-color: var(--color-plain-white);
+  width: 90%;
+  max-width: 607px;
+  padding: 24px 16px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transform: translateY(-40px);
+  margin-bottom: 120px;
+}
+
+.primavera h2 {
+  font-size: 2rem;
+}
+
+.primavera p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+button {
+  width: 100%;
+  height: 42px;
+  color: var(--color-brown);
+  background-color: var(--color-plain-white);
+  border-radius: 4px;
+  border: solid 1.8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pizzas {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+
+.pizzas-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.pizzas-text h3 {
+  font-size: 1.875rem;
+}
+
+.bebidas {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+
+.bebidas-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.bebidas-text h3 {
+  font-size: 1.875rem;
+}
+
+.nuestra-carta {
+  margin-bottom: 120px;
+}
+
+.nuestra-carta h2 {
+  font-size: 1.875rem;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+  place-content: center;
+  gap: 12px;
+
+}
+
+.tarjeta {
+  background-color: var(--color-plain-white);
+  border: 1px solid var(--color-beige);
+}
+
+.tarjeta figcaption {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 16px 16px 42px;
+}
+
+.swiper {
+  background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-top: 1px solid hwb(0 0% 100% / 0.10);
+  padding-top: 40px;
+}
+
+.footer h3 {
+  color: var(--color-black);
+}
+
+.redes-icons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-top: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.footer ul li {
+  padding-bottom: 8px;
+}
+
+.bar {
+  background-color: var(--color-brown);
+  width: 100%;
+  height: 50px;
+}
