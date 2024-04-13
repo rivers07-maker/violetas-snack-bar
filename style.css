@@ -1,14 +1,24 @@
+@font-face {
+  font-family: 'american typewriter';
+  src: url(./assets/fonts/AmericanTypewriterStd-Med.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(./assets/fonts/Roboto-Medium.ttf) format('ttf');
+}
+
 :root {
   --color-white: #f2f2f2;
   --color-plain-white: #fff;
   --color-black: #2e2e2e;
   --color-beige: #d3c1ae;
-  --color-purple: #ad699a;
-  --color-purple-low-opacity: #dfbbd3;
+  --color-purple-high: #8a4f7c;
+  --color-purple-mid: #AC6E9D;
+  --color-purple-low: #ae719f88;
   --color-green: #8cc63f;
   --color-brown: #6a492c;
   --color-fucsia: #c53681;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* -----CSS RESET----- */
@@ -52,7 +62,7 @@ ol[role='list'] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -121,37 +131,31 @@ header {
 }
 
 nav img {
-  width: 20%;
+  width: 25%;
+  max-width: 100px;
 }
 
 nav i {
   font-size: 2rem;
 }
 
-.hero {
+.hero-img1 {
   width: 100%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
 }
 
-.hero h1 {
-  color: var(--color-plain-white);
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 700;
+.hero-img2 {
+  display: none;
+  visibility: hidden;
 }
 
-.hero img {
-  width: 55%;
-  max-width: 420px;
+.hero-img3 {
+  display: none;
+  visibility: hidden;
 }
 
 main {
   color: var(--color-brown);
+  font-family: 'roboto';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,8 +164,8 @@ main {
 
 .primavera {
   background-color: var(--color-plain-white);
-  width: 90%;
-  max-width: 607px;
+  width: 92%;
+  max-width: 1280px;
   padding: 24px 16px 0;
   text-align: center;
   display: flex;
@@ -170,31 +174,32 @@ main {
   justify-content: center;
   gap: 16px;
   transform: translateY(-40px);
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .primavera h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'american typewriter';
 }
 
 .primavera p {
   font-size: 1.125rem;
-  font-weight: 500;
 }
 
-button {
+.btn-primavera {
   width: 100%;
   height: 42px;
+  padding: 8px 40px;
   color: var(--color-brown);
   background-color: var(--color-plain-white);
   border-radius: 4px;
-  border: solid 1.8px;
+  border: 1.8px solid;
   font-size: 1rem;
   font-weight: 700;
 }
 
 .pizzas {
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
@@ -208,11 +213,12 @@ button {
 }
 
 .pizzas-text h3 {
-  font-size: 1.875rem;
+  font-size: 2rem;
+  font-family: 'american typewriter';
 }
 
 .bebidas {
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
@@ -226,7 +232,8 @@ button {
 }
 
 .bebidas-text h3 {
-  font-size: 1.875rem;
+  font-size: 2rem;
+  font-family: 'american typewriter';
 }
 
 .nuestra-carta {
@@ -234,7 +241,8 @@ button {
 }
 
 .nuestra-carta h2 {
-  font-size: 1.875rem;
+  font-size: 2rem;
+  font-family: 'american typewriter';
   padding-bottom: 40px;
   text-align: center;
 }
@@ -244,7 +252,6 @@ button {
   grid-template-columns: calc(50% - 20px) calc(50% - 20px);
   place-content: center;
   gap: 12px;
-
 }
 
 .tarjeta {
@@ -259,12 +266,13 @@ button {
 }
 
 .swiper {
-  background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
-  width: 100%;
+  background-image: radial-gradient(circle, var(--color-purple-low), var(--color-purple-high));
   margin-bottom: 120px;
+  width: 100%;
 }
 
 .footer {
+  font-family: 'roboto';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,4 +305,61 @@ button {
   background-color: var(--color-brown);
   width: 100%;
   height: 50px;
+}
+
+@media (min-width: 640px) {
+  .hero-img1 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .hero-img2 {
+    display: block;
+    visibility: visible;
+  }
+
+  .btn-primavera {
+    width: 166px;
+  }
+
+  .pizzas {
+    width: 92%;
+  }
+
+  .pizzas-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    margin: 0 auto;
+  }
+
+  .pizzas-inner img {
+    width: 290px;
+  }
+
+  .pizzas-text {
+    width: 290px;
+  }
+
+  .bebidas {
+    width: 92%;
+  }
+
+  .bebidas-inner {
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+  }
+
+  .bebidas-inner img {
+    width: 290px;
+  }
+
+  .bebidas-text {
+    width: 290px;
+  }
+
+  .tarjetas {
+    grid-template-columns: calc(30% - 10px) calc(30% - 10px) calc(30% - 10px);
+  }
 }
