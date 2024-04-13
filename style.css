@@ -164,7 +164,7 @@ main {
 
 .primavera {
   background-color: var(--color-plain-white);
-  width: 92%;
+  width: 91%;
   max-width: 1280px;
   padding: 24px 16px 0;
   text-align: center;
@@ -177,7 +177,7 @@ main {
   margin-bottom: 60px;
 }
 
-.primavera h2 {
+.primavera h1 {
   font-size: 2.5rem;
   font-family: 'american typewriter';
 }
@@ -212,7 +212,7 @@ main {
   gap: 20px;
 }
 
-.pizzas-text h3 {
+.pizzas-text h2 {
   font-size: 2rem;
   font-family: 'american typewriter';
 }
@@ -231,7 +231,7 @@ main {
   gap: 20px;
 }
 
-.bebidas-text h3 {
+.bebidas-text h2 {
   font-size: 2rem;
   font-family: 'american typewriter';
 }
@@ -249,9 +249,10 @@ main {
 
 .tarjetas {
   display: grid;
-  grid-template-columns: calc(50% - 20px) calc(50% - 20px);
-  place-content: center;
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  width: 91%;
+  margin: 0 auto;
 }
 
 .tarjeta {
@@ -322,8 +323,12 @@ main {
     width: 166px;
   }
 
+  .primavera {
+    width: 95%;
+  }
+
   .pizzas {
-    width: 92%;
+    width: 95%;
   }
 
   .pizzas-inner {
@@ -342,7 +347,7 @@ main {
   }
 
   .bebidas {
-    width: 92%;
+    width: 95%;
   }
 
   .bebidas-inner {
@@ -360,6 +365,87 @@ main {
   }
 
   .tarjetas {
-    grid-template-columns: calc(30% - 10px) calc(30% - 10px) calc(30% - 10px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-img2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .hero-img3 {
+    display: block;
+    visibility: visible;
+  }
+
+  .primavera {
+    margin-bottom: 80px;
+    width: 92%;
+    transform: translateY(-50px);
+  }
+
+  .primavera h1 {
+    font-size: 3rem;
+  }
+
+  .pizzas {
+    width: 97%;
+    margin-bottom: 140px;
+  }
+
+  .pizzas-inner img {
+    width: 352px;
+  }
+
+  .pizzas-text {
+    width: 352px;
+  }
+
+  .pizzas-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .bebidas {
+    width: 97%;
+    margin-bottom: 140px;
+  }
+
+  .bebidas-inner img {
+    width: 352px;
+  }
+
+  .bebidas-text {
+    width: 352px;
+  }
+
+  .bebidas-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .nuestra-carta {
+    margin-bottom: 140px;
+  }
+
+  .nuestra-carta h2 {
+    font-size: 2.5rem;
+  }
+
+  .tarjetas {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    width: 96%;
+  }
+
+  .swiper {
+    margin-bottom: 140px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 160px;
   }
 }
