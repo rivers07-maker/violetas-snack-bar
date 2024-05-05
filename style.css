@@ -202,7 +202,7 @@ main {
 }
 
 .primavera h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'american typewriter';
 }
 
@@ -294,6 +294,10 @@ main {
   background-image: radial-gradient(circle, var(--color-purple-low), var(--color-purple-high));
   margin-bottom: 120px;
   width: 100%;
+}
+
+.swiper img {
+  margin: 0 auto;
 }
 
 .footer {
