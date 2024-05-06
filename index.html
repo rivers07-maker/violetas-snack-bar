@@ -11,6 +11,7 @@
     content="cremoladillas, pizzas, smoothies, milkshakes, zumos, snackbar, barcelona, españa, lamas, perú">
   <link rel="shortcut icon" href="./assets/images/logo-original.png" type="image/x-icon">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./vendor/css/mobile-navbar.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Pizzas & Smoothies | Violeta's Snack Bar</title>
 </head>
@@ -21,12 +22,12 @@
 
     <nav class="st-menu st-effect-1" id="menu-1">
       <ul>
-        <li><a href="/">Productos</a></li>
-        <li><a href="/">Tiendas</a></li>
-        <li><a href="/">Promociones</a></li>
-        <li><a href="/">Nosotros</a></li>
-        <li><a href="/">Trabaja con Nosotros</a></li>
-        <li><a href="/">Contacto</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Tiendas</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Trabaja con Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
 
@@ -37,14 +38,14 @@
         <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
           <header>
 
-            <div class="container-toggle">
+            <button class="container-toggle" data-effect="st-effect-1">
               <input type="checkbox" id="hamburger-toggle">
               <label for="hamburger-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
               </label>
-            </div>
+            </button>
 
             <img src="./assets/images/logo-original.png" alt="Representación gráfica de Violeta's Snack Bar">
 
@@ -199,6 +200,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
+  <script src="./vendor/js/classie.js"></script>
+  <script src="./vendor/js/sidebar-effect.js"></script>
 </body>
 
 </html>
