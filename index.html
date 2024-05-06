@@ -16,168 +16,186 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav-bar">
 
-      <div class="container-toggle">
-        <input type="checkbox" id="hamburger-toggle">
-        <label for="hamburger-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+  <div id="st-container" class="st-container">
 
-      <img src="./assets/images/logo-original.png" alt="Representación gráfica de Violeta's Snack Bar">
-      <!-- <ul>
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <ul>
         <li><a href="/">Productos</a></li>
         <li><a href="/">Tiendas</a></li>
         <li><a href="/">Promociones</a></li>
         <li><a href="/">Nosotros</a></li>
         <li><a href="/">Trabaja con Nosotros</a></li>
         <li><a href="/">Contacto</a></li>
-      </ul> -->
+      </ul>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <img class="hero-img1" src="./assets/images/hero-section-640px.jpg" alt="Bebidas frias">
-      <img class="hero-img2" src="./assets/images/hero-section-768px.jpg" alt="Bebidas frias">
-      <img class="hero-img3" src="./assets/images/hero-section-2560px.jpg" alt="Bebidas frias">
-    </section>
+    <!-- content push wrapper -->
+    <div class="st-pusher">
 
-    <section class="primavera">
-      <h1>¡Nuestra carta de Primavera ya esta aquí!</h1>
-      <p>Nueva carta para elegir entre pizzas,
-        tequeños, empanadas venezolanas y bebidas frias.
-      </p>
-      <button class="btn-primavera">Lee más</button>
-    </section>
+      <div class="st-content"><!-- this is the wrapper for the content -->
+        <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+          <header>
 
-    <section class="pizzas">
-      <div class="pizzas-inner">
-        <img src="./assets/images/pizza-575px.jpg" alt="Slice de pizza">
-        <div class="pizzas-text">
-          <h2>¡Disfruta de nuestras pizzas!</h2>
-          <p>Combos: <br> (2 Slices de Pizza + 1 Bebida) desde € 6.</p>
-        </div>
-      </div>
+            <div class="container-toggle">
+              <input type="checkbox" id="hamburger-toggle">
+              <label for="hamburger-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
 
-    </section>
+            <img src="./assets/images/logo-original.png" alt="Representación gráfica de Violeta's Snack Bar">
 
-    <section class="bebidas">
-      <div class="bebidas-inner">
-        <img src="./assets/images/cafe-575px.jpg" alt="Vaso de café">
-        <div class="bebidas-text">
-          <h2>¡Disfruta de nuestras bebidas calientes!</h2>
-          <p>Elige entre un Hot Cacao o un Hot Mocca desde € 3.20</p>
-        </div>
-      </div>
-    </section>
+          </header>
 
-    <section class="nuestra-carta">
-      <h2>Nuestra carta de bebida y comida</h2>
-      <div class="tarjetas">
-        <figure class="tarjeta">
-          <img src="./assets/images/cremoladilla-296px_2.jpg" alt="Cremoladilla">
-          <figcaption>Cremoladillas</figcaption>
-        </figure>
+          <main>
+            <section class="hero">
+              <img class="hero-img1" src="./assets/images/hero-section-640px.jpg" alt="Bebidas frias">
+              <img class="hero-img2" src="./assets/images/hero-section-768px.jpg" alt="Bebidas frias">
+              <img class="hero-img3" src="./assets/images/hero-section-2560px.jpg" alt="Bebidas frias">
+            </section>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/smoothie-296px_2.jpg" alt="Smoothie">
-          <figcaption>Smoothies</figcaption>
-        </figure>
+            <section class="primavera">
+              <h1>¡Nuestra carta de Primavera ya esta aquí!</h1>
+              <p>Nueva carta para elegir entre pizzas,
+                tequeños, empanadas venezolanas y bebidas frias.
+              </p>
+              <button class="btn-primavera">Lee más</button>
+            </section>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/milkshake-296px_2.jpg" alt="Milkshake">
-          <figcaption>Milkshakes</figcaption>
-        </figure>
+            <section class="pizzas">
+              <div class="pizzas-inner">
+                <img src="./assets/images/pizza-575px.jpg" alt="Slice de pizza">
+                <div class="pizzas-text">
+                  <h2>¡Disfruta de nuestras pizzas!</h2>
+                  <p>Combos: <br> (2 Slices de Pizza + 1 Bebida) desde € 6.</p>
+                </div>
+              </div>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/zumo-296px_2.jpg" alt="Zumo">
-          <figcaption>Zumos</figcaption>
-        </figure>
+            </section>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/pizza-296px_2.jpg" alt="Pizza">
-          <figcaption>Pizzas</figcaption>
-        </figure>
+            <section class="bebidas">
+              <div class="bebidas-inner">
+                <img src="./assets/images/cafe-575px.jpg" alt="Vaso de café">
+                <div class="bebidas-text">
+                  <h2>¡Disfruta de nuestras bebidas calientes!</h2>
+                  <p>Elige entre un Hot Cacao o un Hot Mocca desde € 3.20</p>
+                </div>
+              </div>
+            </section>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/empanadas-296px_2.jpg" alt="Empanadas">
-          <figcaption>Empanadas</figcaption>
-        </figure>
+            <section class="nuestra-carta">
+              <h2>Nuestra carta de bebida y comida</h2>
+              <div class="tarjetas">
+                <figure class="tarjeta">
+                  <img src="./assets/images/cremoladilla-296px_2.jpg" alt="Cremoladilla">
+                  <figcaption>Cremoladillas</figcaption>
+                </figure>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/tequenos-296px_2.jpg" alt="Tequeños">
-          <figcaption>Tequeños</figcaption>
-        </figure>
+                <figure class="tarjeta">
+                  <img src="./assets/images/smoothie-296px_2.jpg" alt="Smoothie">
+                  <figcaption>Smoothies</figcaption>
+                </figure>
 
-        <figure class="tarjeta">
-          <img src="./assets/images/tarta-296px_2.jpg" alt="Tarta">
-          <figcaption>Tartas</figcaption>
-        </figure>
-      </div>
-    </section>
+                <figure class="tarjeta">
+                  <img src="./assets/images/milkshake-296px_2.jpg" alt="Milkshake">
+                  <figcaption>Milkshakes</figcaption>
+                </figure>
 
-    <div class="swiper">
-      <div class="swiper-wrapper">
+                <figure class="tarjeta">
+                  <img src="./assets/images/zumo-296px_2.jpg" alt="Zumo">
+                  <figcaption>Zumos</figcaption>
+                </figure>
 
-        <div class="swiper-slide">
-          <img src="./assets/images/carousel-2.jpg" alt="Pizzas de diferentes sabores">
-        </div>
+                <figure class="tarjeta">
+                  <img src="./assets/images/pizza-296px_2.jpg" alt="Pizza">
+                  <figcaption>Pizzas</figcaption>
+                </figure>
 
-        <div class="swiper-slide">
-          <img src="./assets/images/carousel-3.jpg" alt="Cremoladillas de tipo parfait">
-        </div>
+                <figure class="tarjeta">
+                  <img src="./assets/images/empanadas-296px_2.jpg" alt="Empanadas">
+                  <figcaption>Empanadas</figcaption>
+                </figure>
 
-        <div class="swiper-slide">
-          <img src="./assets/images/carousel-4.jpg" alt="Smoothies sabor arandano y cacao">
-        </div>
+                <figure class="tarjeta">
+                  <img src="./assets/images/tequenos-296px_2.jpg" alt="Tequeños">
+                  <figcaption>Tequeños</figcaption>
+                </figure>
 
-        <div class="swiper-slide">
-          <img src="./assets/images/carousel-5.jpg" alt="Cremoladillas de tipo cappuccino">
-        </div>
+                <figure class="tarjeta">
+                  <img src="./assets/images/tarta-296px_2.jpg" alt="Tarta">
+                  <figcaption>Tartas</figcaption>
+                </figure>
+              </div>
+            </section>
 
-        <div class="swiper-slide">
-          <img src="./assets/images/carousel-6.jpg" alt="Smoothies sabor naranja">
-        </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
 
-        <div class="swiper-slide">
-          <img src="./assets/images/carousel-7.jpg" alt="Clientes sentados en mesas de la tienda en Perú">
-        </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/carousel-2.jpg" alt="Pizzas de diferentes sabores">
+                </div>
 
-      </div>
-    </div>
-  </main>
+                <div class="swiper-slide">
+                  <img src="./assets/images/carousel-3.jpg" alt="Cremoladillas de tipo parfait">
+                </div>
 
-  <footer class="footer">
-    <div class="redes">
+                <div class="swiper-slide">
+                  <img src="./assets/images/carousel-4.jpg" alt="Smoothies sabor arandano y cacao">
+                </div>
 
-      <h3>CONECTA CON NOSOTROS</h3>
+                <div class="swiper-slide">
+                  <img src="./assets/images/carousel-5.jpg" alt="Cremoladillas de tipo cappuccino">
+                </div>
 
-      <div class="redes-icons">
-        <a href="https://www.facebook.com/violetascremoladillas/" target="_blank">
-          <img src="./assets/images/facebook-icon.png" alt="Facebook icon">
-        </a>
-        <a href="https://www.instagram.com/violetassnackbar/?hl=es" target="_blank">
-          <img src="./assets/images/instagram-icon.png" alt="Instagram icon">
-        </a>
-      </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/carousel-6.jpg" alt="Smoothies sabor naranja">
+                </div>
 
-    </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/carousel-7.jpg" alt="Clientes sentados en mesas de la tienda en Perú">
+                </div>
 
-    <ul>
-      <li><a href="/">Faqs</a></li>
-      <li><a href="/">Mapa del Sitio</a></li>
-      <li><a href="/">Términos & Condiciones</a></li>
-      <li><a href="/">Contáctanos</a></li>
-    </ul>
+              </div>
+            </div>
+          </main>
 
-  </footer>
+          <footer class="footer">
+            <div class="redes">
 
-  <div class="bar"></div>
+              <h3>CONECTA CON NOSOTROS</h3>
+
+              <div class="redes-icons">
+                <a href="https://www.facebook.com/violetascremoladillas/" target="_blank">
+                  <img src="./assets/images/facebook-icon.png" alt="Facebook icon">
+                </a>
+                <a href="https://www.instagram.com/violetassnackbar/?hl=es" target="_blank">
+                  <img src="./assets/images/instagram-icon.png" alt="Instagram icon">
+                </a>
+              </div>
+
+            </div>
+
+            <ul>
+              <li><a href="/">Faqs</a></li>
+              <li><a href="/">Mapa del Sitio</a></li>
+              <li><a href="/">Términos & Condiciones</a></li>
+              <li><a href="/">Contáctanos</a></li>
+            </ul>
+
+          </footer>
+
+          <div class="bar"></div>
+
+        </div><!-- /st-content-inner -->
+      </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+  </div><!-- /st-container -->
+
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
