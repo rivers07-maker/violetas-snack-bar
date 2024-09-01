@@ -144,12 +144,6 @@ header {
   gap: 30px;
 }
 
-header img {
-  width: 25%;
-  max-width: 100px;
-}
-
-
 .container-toggle {
   border: 0;
   position: relative;
@@ -181,20 +175,6 @@ header img {
   height: 0.25rem;
   width: 2rem;
   background-color: black;
-}
-
-.hero-img1 {
-  width: 100%;
-}
-
-.hero-img2 {
-  display: none;
-  visibility: hidden;
-}
-
-.hero-img3 {
-  display: none;
-  visibility: hidden;
 }
 
 main {
@@ -357,17 +337,8 @@ main {
 }
 
 @media (min-width: 640px) {
-  .hero-img1 {
-    display: none;
-    visibility: hidden;
-  }
 
-  .hero-img2 {
-    display: block;
-    visibility: visible;
-  }
-
-  .btn-primavera {
+    .btn-primavera {
     width: 166px;
   }
 
@@ -423,16 +394,6 @@ main {
   .nav-bar {
     margin: 0 32px;
     gap: 52px;
-  }
-
-  .hero-img2 {
-    display: none;
-    visibility: hidden;
-  }
-
-  .hero-img3 {
-    display: block;
-    visibility: visible;
   }
 
   .primavera {

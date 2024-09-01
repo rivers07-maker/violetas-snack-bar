@@ -10,7 +10,7 @@
   <meta name="keywords"
     content="cremoladillas, pizzas, smoothies, milkshakes, zumos, snackbar, barcelona, españa, lamas, perú">
   <link rel="shortcut icon" href="./assets/images/logo-original.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./vendor/css/mobile-navbar.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Pizzas & Smoothies | Violeta's Snack Bar</title>
@@ -47,15 +47,17 @@
               </label>
             </button>
 
-            <img src="./assets/images/logo-original.png" alt="Representación gráfica de Violeta's Snack Bar">
+            <img src="./assets/images/logo-original.png" width="100px" alt="Representación gráfica de Violeta's Snack Bar">
 
           </header>
 
           <main>
             <section class="hero">
-              <img class="hero-img1" src="./assets/images/hero-section-640px.jpg" alt="Bebidas frias">
-              <img class="hero-img2" src="./assets/images/hero-section-768px.jpg" alt="Bebidas frias">
-              <img class="hero-img3" src="./assets/images/hero-section-2560px.jpg" alt="Bebidas frias">
+              <picture>
+                <source media="(max-width: 640px)" srcset="./assets/images/hero-section-640px.jpg" />
+                <source media="(max-width: 768px)" srcset="./assets/images/hero-section-768px.jpg" />
+                <img src="./assets/images/hero-section-2560px.jpg" alt="Bebidas frias de Violeta's Snack Bar" />
+              </picture>
             </section>
 
             <section class="primavera">
